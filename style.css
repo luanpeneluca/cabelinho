@@ -30,7 +30,7 @@ header {
     height: 150px;
 
     background-image: url(images/cabelinho_cover.jpg);
-    background-size: contain;
+    background-size: cover;
     background-attachment: scroll;
     background-position: center center;
     background-repeat: no-repeat;
