@@ -82,7 +82,7 @@ div.titulo {
 
     font-family: var(--fonteH2);
     height: 60px;
-    width: 328px;
+
     margin-left:-15px;
 
 }
@@ -135,7 +135,6 @@ div.capaAlbum {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 298px;
 }
 
 .linkAlbum > p > a {
