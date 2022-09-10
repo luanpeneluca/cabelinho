@@ -1,0 +1,156 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'Anthony';
+    src: url(fonts/Anthony\ Hunter.otf);
+}
+@font-face {
+    font-family: 'Futura';
+    src: url(fonts/FuturaStdBook.otf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --fonteHeader: 'Anthony';
+    --fonteH2: 'Futura';
+}
+
+body {
+    outline: 1px dashed red;
+    
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 150px;
+
+    background-image: url(images/cabelinho_cover.jpg);
+    background-size: contain;
+    background-attachment: scroll;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+header > h1 {
+    font-family: var(--fonteHeader);
+    font-size: 2.8em;
+    font-weight: lighter;
+
+}
+
+main {
+    padding: 15px;
+    background: rgb(2,0,36);
+    background: linear-gradient(141deg, rgba(2,0,36,1) 0%, rgba(254,250,207,1) 0%, rgba(252,247,167,1) 100%);
+    
+}
+
+h1 {
+    font-size: 2em;
+    font-family: var(--fonteH2);
+    text-align: center;
+}
+
+div.container {
+    padding: 15px;
+    background-color: white;
+    box-shadow: 0px 0px 5px rgb(0, 0, 0);
+}
+
+div.container > p {
+    line-height: 1.5em;
+    font-size: 1.15em;
+    padding: 10px;
+    text-align: justify;
+    font-family: var(--fonteH2);
+}
+
+div.video {
+    margin-bottom: 15px;
+}
+
+div.titulo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+    font-family: var(--fonteH2);
+    height: 60px;
+    width: 328px;
+    margin-left:-15px;
+
+}
+
+div.titulo > h2 {
+    font-size: 2em;
+    color: black;
+    background-color: rgba(255, 255, 255, 0.37);
+    text-align: center;
+    width: 180px;
+
+    
+}
+
+#album01 {
+    background-image: url(images/minhaRaiz.jpg);
+    
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#album02 {
+    background-image: url(images/ainda.jpg);
+    
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#album03 {
+    background-image: url(images/littleHair.jpg);
+    
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+div.linkAlbum {
+    text-align: center;
+    font-family: var(--fonteH2);
+    margin-bottom: 15px;
+
+}
+
+div.capaAlbum {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 298px;
+}
+
+.linkAlbum > p > a {
+    font-size: 1.5em;
+    color: black;
+    text-decoration: underline;
+
+}
+
+footer {
+    text-align: center;
+
+    font-family: var(--fonteH2);
+    font-size: 1em;
+    line-height: normal;
+
+    padding: 10px;
+}
