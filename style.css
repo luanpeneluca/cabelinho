@@ -43,10 +43,37 @@ header > h1 {
 
 }
 
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 15px 15px 0px 15px;
+    background-color: #FBF6C2;
+}
+
+nav > img {
+    margin-right: 5px;
+}
+
+nav > p {
+    font-family: var(--fonteH2);
+    display: inline-block;
+    margin-right: 10px;
+}
+
+nav > p > a {
+    color: black;
+    text-decoration: none   ;
+}
+
 main {
     padding: 15px;
-    background: rgb(2,0,36);
-    background: linear-gradient(141deg, rgba(2,0,36,1) 0%, rgba(254,250,207,1) 0%, rgba(252,247,167,1) 100%);
+    /*background: rgb(2,0,36);
+    background: linear-gradient(141deg, rgba(2,0,36,1) 0%, rgba(254,250,207,1) 0%, rgba(252,247,167,1) 100%); */
+
+    background: rgb(254,250,207);
+    background: linear-gradient(180deg, rgba(254,250,207,1) 0%, rgba(179,126,110,1) 35%, rgba(119,96,86,1) 47%, rgba(167,132,178,1) 57%, rgba(77,54,115,1) 73%, rgba(227,208,144,1) 86%, rgba(184,166,106,1) 100%);
     
 }
 
@@ -62,7 +89,15 @@ div.container {
     box-shadow: 0px 0px 5px rgb(0, 0, 0);
 }
 
-div.container > p {
+div.gradient {
+    background: rgb(255,255,255);
+    background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(203,167,156,0) 30%, rgba(179,126,110,1) 100%);
+
+    height: 30px;
+    margin: 0px -15px;
+}
+
+div.container > p, .background >  p {
     line-height: 1.5em;
     font-size: 1.15em;
     padding: 10px;
@@ -74,6 +109,11 @@ div.video {
     margin-bottom: 15px;
 }
 
+div.background {
+    margin: 0px -15px -15px -15px;
+    padding-bottom: 15px;
+}
+
 div.titulo {
     display: flex;
     align-items: center;
@@ -82,19 +122,29 @@ div.titulo {
 
     font-family: var(--fonteH2);
     height: 60px;
-
-    margin: 0px -15px;
-
 }
 
-div.titulo > h2 {
+.background > div.titulo > h2 {
     font-size: 1.8em;
     color: black;
     background-color: rgba(255, 255, 255, 0.37);
     text-align: center;
     width: 180px;
+}
 
-    
+#minhaRaiz {
+    background: rgb(2,0,36);
+    background: linear-gradient(160deg, rgba(2,0,36,1) 0%, rgba(187,130,113,1) 0%, rgba(117,95,85,1) 100%);
+}
+
+#ainda {
+    background: rgb(2,0,36);
+    background: linear-gradient(160deg, rgba(2,0,36,1) 0%, rgba(176,139,209,1) 0%, rgba(72,50,111,1) 100%);
+}
+
+#littleHair {
+    background: rgb(2,0,36);
+    background: linear-gradient(153deg, rgba(2,0,36,1) 0%, rgba(235,215,151,1) 0%, rgba(184,166,106,1) 100%);
 }
 
 #album01 {
@@ -137,7 +187,7 @@ div.capaAlbum {
     justify-content: center;
 }
 
-.linkAlbum > p > a {
+.background > .linkAlbum > p > a {
     font-size: 1.5em;
     color: black;
     text-decoration: underline;
@@ -152,4 +202,16 @@ footer {
     line-height: normal;
 
     padding: 10px;
+}
+
+@media (min-width: 700px) {
+
+    header > h1 {
+        font-size: 4em;
+    }
+
+    div.container {
+        width: 650px;
+        margin: auto;
+    }
 }
